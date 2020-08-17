@@ -1,15 +1,22 @@
 body {
   background-color: rgba(100, 85, 164);
 }
+#wrap{
+  z-index: 10000;
+  min-height: 100vh;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+
+}
 
 #main-text {
-  z-index: 100000;
-  top: 50%;
-  left: 50%;
   text-align: center;
   color: white;
   text-shadow: 0.1em 0.1em 0.2em black;
-  font-size: 10em;
+  font-size: 5em;
   font-family: sans-serif;
 }
 
