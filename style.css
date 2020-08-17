@@ -1,0 +1,54 @@
+body {
+  background-color: rgba(100, 85, 164);
+}
+
+#main-text {
+  z-index: 100000;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: white;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  font-size: 10em;
+  font-family: sans-serif;
+}
+
+@keyframes infiniteScrollBg {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-200%);
+  }
+}
+
+.animated-scene {
+  left:0;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  min-height: 400px;
+}
+
+.animated-scene__frame {
+  width: 100%;
+  position: relative;
+  animation: infiniteScrollBg 30s infinite linear;
+}
+
+.animated-scene__frame:after {
+  content: "";
+  height: 500%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #4277a3;
+  background-image: url('CClogos.png');
+  background-size: 100% 20%;
+}
+
+.animated-scene__frame__img {
+  width: 100%;
+}
