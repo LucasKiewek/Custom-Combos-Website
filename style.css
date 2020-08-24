@@ -1,15 +1,27 @@
 body {
   background-color: rgba(100, 85, 164);
 }
+
+#privacy-policy {
+	padding: 2em;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	background-color: white;
+	box-shadow: 0px 0px 30px #262626;
+	width: 75%;
+	left: 25%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 10px;
+}
+
 #wrap{
   z-index: 10000;
   min-height: 100vh;
   min-width: 100vw;
   justify-content: center;
-  align-items: center;
   display: flex;
-  position: fixed;
-
+  position:absolute;
+  overflow: auto;
 }
 
 #main-text {
